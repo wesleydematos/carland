@@ -16,7 +16,12 @@ import { useMediaQuery } from "react-responsive";
 //icons
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 
+//search context
+import { useSeachContext } from "../context/search";
+
 export default function Header() {
+  const { setSearchActive } = useSeachContext();
+
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -27,6 +32,7 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 40 ? setHeader(true) : setHeader(false);
+      window.scrollY > 800 ? setSearchActive(true) : setSearchActive(false);
     };
     window.addEventListener("scroll", handleScroll);
 
