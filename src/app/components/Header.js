@@ -76,7 +76,7 @@ export default function Header() {
         <nav
           className={`${
             nav ? "max-h-max py-8 px-4 xl:px-0 xl:py-0" : "max-h-0 xl:max-h-max"
-          } flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium 
+          } flex flex-col w-full gap-y-6 overflow-hidden font-bold xl:font-medium 
           xl:flex-row xl:w-max xl:gap-x-8 xl:h-max bg-transparent xl:pb-0 transition-all 
           duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
         >
