@@ -44,8 +44,8 @@ export default function Header() {
   return (
     <header
       className={`${
-        header ? "bg-white shadow-md py-2 " : "bg-transparent shadow-none py-4"
-      } fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
+        header ? "shadow-md py-2 " : " shadow-none py-4"
+      } bg-white fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
     >
       <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
         <div className="flex justify-between items-center px-4">
@@ -76,7 +76,7 @@ export default function Header() {
         <nav
           className={`${
             nav ? "max-h-max py-8 px-4 xl:px-0 xl:py-0" : "max-h-0 xl:max-h-max"
-          } flex flex-col w-full gap-y-6 overflow-hidden font-bold xl:font-medium 
+          } flex flex-col w-full gap-y-4 overflow-hidden font-bold xl:font-medium 
           xl:flex-row xl:w-max xl:gap-x-8 xl:h-max bg-transparent xl:pb-0 transition-all 
           duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
         >
@@ -139,7 +139,7 @@ export default function Header() {
             activeClass="active"
             smooth={desktopMode}
             spy={true}
-            className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
+            className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto max-h-[45px]"
           >
             See all cars
           </Link>
