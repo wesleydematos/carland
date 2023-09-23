@@ -101,7 +101,6 @@ export default function Hero() {
           initial="hidden"  
           whileInView={"show"}
           viewport={{once: false, amount: 0.2}}
-          
         >
           <Search />
         </motion.div>
