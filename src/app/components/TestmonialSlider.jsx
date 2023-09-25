@@ -21,13 +21,13 @@ import Image from "next/image";
 //data
 const testimonialData = [
   {
-    message: "They truly exceed my expectations and made my car rental experience a delight",
+    message: "They truly exceed my expectations and made my car rental experience a delight.",
     avatar: "/images/testimonial/avatar.png",
     name: "Jane Doe",
     job: "Photographer & Videographer"
   },
   {
-    message: "They truly exceed my expectations and made my car rental experience a delight",
+    message: "The cars were modern and incredibly comfortable, making our journey a smooth and enjoyable one",
     avatar: "/images/testimonial/avatar.png",
     name: "Ana Doe",
     job: "Software Engineer"
@@ -36,13 +36,19 @@ const testimonialData = [
 
 export default function TestimonialSlider() {
   return (
-    <div>
+    <motion.div
+      variants={fadeIn("up", 0.4)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: false, amount: 0.6}}
+      className="container mx-auto"
+    >
       <Swiper 
         pagination={{
           clickable: true,
           dynamicBullets: true,
         }}
-        modules={{Pagination}}
+        modules={[Pagination]}
         className="h-[450px] xl:h-[400px]"
       >
         {testimonialData.map((testimonial)=>{
@@ -59,6 +65,6 @@ export default function TestimonialSlider() {
           </SwiperSlide>
         })}
       </Swiper>
-    </div>
+    </motion.div>
   )
 }
