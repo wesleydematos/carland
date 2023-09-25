@@ -1,5 +1,5 @@
 //components
-import TestimonialSlider from "./TestmonialSlider";
+import TestimonialSlider from "./TestimonialSlider";
 
 export default function Testimonial() {
   return (
