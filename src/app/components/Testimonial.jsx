@@ -1,10 +1,15 @@
+//components
+import TestimonialSlider from "./TestmonialSlider";
+
 export default function Testimonial() {
   return (
     <section
-      className="section flex items-center bg-cyan-200"
+      className="section flex items-center"
       id="testimonials"
     >
-      Testimonial
+      <div className="container mx-auto">
+        <TestimonialSlider/>
+      </div>
     </section>
   );
 }
