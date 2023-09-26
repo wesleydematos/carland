@@ -30,7 +30,7 @@ export default function Brands() {
             <Image src={"icons/brands/audi.svg"} width={85} height={50} alt="Audi"/>
           </div>
           <div>
-            <Image src={"icons/brands/BMW.svg"} width={60} height={60} alt="BMW"/>
+            <Image src={"icons/brands/bmw.svg"} width={60} height={60} alt="BMW"/>
           </div>
           <div>
             <Image src={"icons/brands/vw.svg"} width={60} height={60} alt="VolksWagen"/>
