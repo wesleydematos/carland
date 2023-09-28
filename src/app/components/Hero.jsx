@@ -30,7 +30,7 @@ export default function Hero() {
               viewport={{once: false, amount: 0.6}}
               className="h1"
             >
-              Explore the Finest <span className="text-accent">Global</span> Offers
+              Explore as melhores ofertas <span className="text-accent">globais</span>
             </motion.h1>
             <motion.p 
               className="description xl:max-w-[370px] xxl:max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-10"
@@ -39,7 +39,7 @@ export default function Hero() {
               whileInView={"show"}
               viewport={{once: false, amount: 0.6}}
             >
-              Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.
+              Encontre o carro ideal para qualquer aventura com nossa ampla variedade de aluguel de carros acessíveis e confiáveis.
             </motion.p>
            <motion.div 
             variants={fadeIn("down", 0.6)} 
@@ -48,7 +48,7 @@ export default function Hero() {
             viewport={{once: false, amount: 0.8}}
             className="flex gap-x-3 justify-center xl:justify-start"
            >
-            <button className="btn-cta bg-black py-2 px-3 rounded">
+            <button className="btn-cta cursor-not-allowed">
               <Image 
                 src={"/icons/buttons/app-store.svg"} 
                 width={132} 
@@ -56,7 +56,7 @@ export default function Hero() {
                 alt="Google Play Button"
               />
             </button>
-            <button className="btn-cta bg-black py-2 px-3 rounded">
+            <button className="btn-cta cursor-not-allowed">
               <Image 
                 src={"/icons/buttons/google-play.svg"} 
                 width={132} 

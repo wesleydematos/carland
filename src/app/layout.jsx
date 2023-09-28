@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Carland",
-  description: "Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.",
+  description: "Encontre o carro ideal para qualquer aventura com nossa ampla variedade de aluguel de carros acessíveis e confiáveis.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <SearchContextProvider>
-      <html lang="en">
+      <html lang="pt-BR">
         <body className={inter.className}>{children}</body>
       </html>
     </SearchContextProvider>

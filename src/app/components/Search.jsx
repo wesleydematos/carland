@@ -24,8 +24,8 @@ export default function Search() {
         <DateSelection />
         <HoursSelection />
         <div className="xl:h-full flex items-center px-6 xl:px-0">
-          <button className={`${searchActive ? "xl:w-[164px] btn-sm" : "xl:w-[184px] btn-lg"} btn btn-accent `}>
-            Search
+          <button className={`${searchActive ? "xl:w-[164px] btn-sm" : "xl:w-[184px] btn-lg"} btn btn-accent cursor-not-allowed`} disabled>
+            Pesquisar
           </button>
         </div>
       </div>

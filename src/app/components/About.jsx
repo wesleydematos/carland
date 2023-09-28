@@ -49,7 +49,7 @@ export default function About() {
                 viewport={{once: false, amount: 0.6}}
                 variants={fadeIn("up", 0.4)}
               >
-                Car services simplified.
+                Serviços de automóveis simplificados.
               </motion.h2>
               <motion.p 
                 className="mb-[42px] max-w-md"
@@ -58,9 +58,9 @@ export default function About() {
                 viewport={{once: false, amount: 0.6}}
                 variants={fadeIn("up", 0.6)}
               >
-                Rent, choose and repair with ease. Our convenient locations,
-                diverse car types and reliable repair points ensure a seamless
-                car experience.
+                Alugue, escolha e repare com facilidade. Nossas localizações convenientes, 
+                diversos tipos de carros e pontos de reparo confiáveis ​
+                ​garantem uma experiência perfeita.
               </motion.p>
               <motion.div 
                 className="flex items-center gap-x-8 mb-12"
@@ -75,7 +75,7 @@ export default function About() {
                     {inView ? <><CountUp start={0} end={50} duration={3} delay={1}/>+</> : null}
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    car <br /> types
+                    tipos de <br /> carros
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">
@@ -84,7 +84,7 @@ export default function About() {
                     {inView ? <><CountUp start={0} end={135} duration={3} delay={1}/>+</> : null}
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    rental <br /> outlets
+                    locadoras <br /> 
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">
@@ -93,20 +93,21 @@ export default function About() {
                     {inView ? <><CountUp start={0} end={35} duration={3} delay={1}/>+</> : null}
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    repair <br /> points
+                    pontos de <br /> reparo
                   </div>
                 </div>
               </motion.div>
               <motion.button 
                 className="hidden xl:block bg-accent hover:bg-accent-hover
                 rounded-[10px] w-full h-16 uppercase font-medium text-white
-                tracking-[2px] text-[13px] max-w-[184px]"
+                tracking-[2px] text-[13px] max-w-[184px] cursor-not-allowed"
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{once: false, amount: 0.6}}
                 variants={fadeIn("up", 1)}
+                disabled
               >
-                See all cars
+                Ver todos os carros
               </motion.button>
             </div>
           </div>

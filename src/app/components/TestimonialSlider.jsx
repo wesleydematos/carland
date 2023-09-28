@@ -21,16 +21,16 @@ import Image from "next/image";
 //data
 const testimonialData = [
   {
-    message: "They truly exceed my expectations and made my car rental experience a delight.",
+    message: "Eles realmente superaram minhas expectativas e tornaram minha experiência de aluguel de carro fantástica.",
     avatar: "/images/testimonial/avatar.png",
-    name: "Jane Doe",
-    job: "Photographer & Videographer"
+    name: "Maria D.B.",
+    job: "Fotógrafa"
   },
   {
-    message: "The cars were modern and incredibly comfortable, making our journey a smooth and enjoyable one",
+    message: "Os carros eram modernos e incrivelmente confortáveis, tornando a nossa viagem tranquila e agradável.",
     avatar: "/images/testimonial/avatar.png",
-    name: "Ana Doe",
-    job: "Software Engineer"
+    name: "Jennifer",
+    job: "UI/UX Designer"
   },
 ]
 

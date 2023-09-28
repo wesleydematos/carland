@@ -21,7 +21,7 @@ const cars = [
   {
     type: "Hatchback",
     name: "Ford Focus",
-    price: 29,
+    price: 60,
     stars: 3.5,
     image: "images/carSlider/car01.svg",
     info: [
@@ -31,7 +31,7 @@ const cars = [
       },
       {
         icon: "icons/carSlider/seat.svg",
-        text: "5 Seats"
+        text: "5 Lugares"
       },
       {
         icon: "icons/carSlider/gas.svg",
@@ -39,18 +39,14 @@ const cars = [
       },
       {
         icon: "icons/carSlider/engine.svg",
-        text: "1600 HP"
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "Front"
+        text: "45L"
       },
     ]
   },
   {
     type: "Sedan",
     name: "Toyota Corolla",
-    price: 25,
+    price: 100,
     stars: 5,
     image: "images/carSlider/car02.svg",
     info: [
@@ -60,36 +56,32 @@ const cars = [
       },
       {
         icon: "icons/carSlider/seat.svg",
-        text: "5 Seats"
+        text: "5 Lugares"
       },
       {
         icon: "icons/carSlider/gas.svg",
-        text: "Gas"
+        text: "Álcool"
       },
       {
         icon: "icons/carSlider/engine.svg",
-        text: "1600 HP"
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "Front"
+        text: "45L"
       },
     ]
   },
   {
     type: "SUV",
     name: "Honda CR-V",
-    price: 35,
+    price: 75,
     stars: 4.7,
     image: "images/carSlider/car03.svg",
     info: [
       {
         icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic"
+        text: "Automático"
       },
       {
         icon: "icons/carSlider/seat.svg",
-        text: "5 Seats"
+        text: "5 Lugares"
       },
       {
         icon: "icons/carSlider/gas.svg",
@@ -97,28 +89,24 @@ const cars = [
       },
       {
         icon: "icons/carSlider/engine.svg",
-        text: "1600 HP"
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "Front"
+        text: "45L"
       },
     ]
   },
   {
     type: "Convertible",
     name: "Hazda MX-5",
-    price: 32,
+    price: 95,
     stars: 4.9,
     image: "images/carSlider/car02.svg",
     info: [
       {
         icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic"
+        text: "Automático"
       },
       {
         icon: "icons/carSlider/seat.svg",
-        text: "5 Seats"
+        text: "5 Lugares"
       },
       {
         icon: "icons/carSlider/gas.svg",
@@ -126,11 +114,7 @@ const cars = [
       },
       {
         icon: "icons/carSlider/engine.svg",
-        text: "1600 HP"
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "Front"
+        text: "45L"
       },
     ]
   },
@@ -161,7 +145,7 @@ export default function CarSlider() {
                   <div>
                     <p className="text-[13px] uppercase">{car.type}</p>
                     <h3 className="text-[1rem] leading-6 uppercase font-bold">{car.name}</h3>
-                    <p className="mb-6 text-accent uppercase font-semibold">{car.price}/day</p>
+                    <p className="mb-6 text-accent uppercase font-semibold">R${car.price}/day</p>
                   </div>
                   <div className="flex gap-x-2 text-accent h-max">
                     <FaStar/>
@@ -182,7 +166,7 @@ export default function CarSlider() {
                     </div>
                   })}
                 </div>
-                <button className="btn btn-accent btn-lg">See details</button>
+                <button className="btn btn-accent btn-lg cursor-not-allowed" disabled>Ver detalhes</button>
               </div>
             </SwiperSlide>
           })}

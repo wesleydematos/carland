@@ -23,7 +23,7 @@ export default function Why() {
           viewport={{once: false, amount: 0.6}}
           className="h2 text-center"
         >
-          Unmatched excellence and customer satisfaction
+          Excelência incomparável e satisfação do cliente
         </motion.h2>
         <motion.p 
           variants={fadeIn("up", 0.4)}
@@ -32,9 +32,9 @@ export default function Why() {
           viewport={{once: false, amount: 0.6}}
           className="max-w-[680px] text-center mx-auto mb-2"
         >
-          Our dedication to providing exceptional services sets up apart from the
-          competition. From the moment you engage with us, we strive to 
-          exceed your expectations in every interaction.
+          Nossa dedicação em fornecer serviços excepcionais se diferencia da concorrência. 
+          A partir do momento em que você interage conosco, nos esforçamos para superar 
+          suas expectativas em cada interação.
         </motion.p>
         <motion.div 
           variants={fadeIn("up", 0.6)}
@@ -56,25 +56,28 @@ export default function Why() {
           <div className="flex flex-col items-center text-center max-w-[160px]
           xl:max-w-none p-2 xl:p-0">
             <MdKey className="text-[30px] text-accent mb-4"/>
-            <h3 className="h3">Rent simply and quickly</h3>
-            <p className="hidden xl:flex">We prioritize your need and we go above and beyond to ensure your
-              experience with us is nothing short of outstanding.
+            <h3 className="h3">Alugue de forma simples e rápida</h3>
+            <p className="hidden xl:flex">
+              Priorizamos sua necessidade e vamos além para garantir que sua experiência conosco 
+              seja excelente.
             </p>
           </div>
           <div className="flex flex-col items-center text-center max-w-[160px]
           xl:max-w-none p-2 xl:p-0">
             <MdTrendingUp className="text-[30px] text-accent mb-4"/>
-            <h3 className="h3">Modern & well maintained vehicles</h3>
-            <p className="hidden xl:flex">We have the latest modern vehicles, meticulously maintained 
-              to guarantee your safety and comfort throughout your journey.
+            <h3 className="h3">Veículos modernos e bem conservados</h3>
+            <p className="hidden xl:flex">
+              Dispomos de veículos modernos de última geração, meticulosamente mantidos para garantir 
+              sua segurança e conforto durante toda a sua viagem.
             </p>
           </div>
           <div className="flex flex-col items-center text-center max-w-[160px]
           xl:max-w-none p-2 xl:p-0">
             <MdHandshake className="text-[30px] text-accent mb-4"/>
-            <h3 className="h3">Prompt and flexible services</h3>
-            <p className="hidden xl:flex">We take pride in our prompt and flexible services, designed to cater 
-              to your needs whenever and wherever you require assistance.
+            <h3 className="h3">Serviços rápidos e flexíveis</h3>
+            <p className="hidden xl:flex">
+              Temos orgulho de nossos serviços rápidos e flexíveis, projetados para atender às suas 
+              necessidades quando e onde você precisar de assistência.
             </p>
           </div>
         </motion.div>

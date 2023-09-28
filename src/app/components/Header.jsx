@@ -87,7 +87,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            Home
+            Página Inicial
           </Link>
           <Link
             to="cars"
@@ -96,7 +96,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            Cars
+            Carros
           </Link>
           <Link
             to="about"
@@ -105,7 +105,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            About
+            Sobre
           </Link>
           <Link
             to="why"
@@ -114,7 +114,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            Why us
+            Por que nós
           </Link>
           <Link
             to="testimonials"
@@ -123,7 +123,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            Testimonials
+            Depoimentos
           </Link>
           <Link
             to="contact"
@@ -132,7 +132,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            Contact
+            Contatos
           </Link>
           <Link
             to="/"
@@ -141,7 +141,7 @@ export default function Header() {
             spy={true}
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto max-h-[45px]"
           >
-            See all cars
+            Ver todos os carros
           </Link>
           <SearchMobile />
         </nav>

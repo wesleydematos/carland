@@ -10,10 +10,10 @@ import { FaClock } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 //hour
-const hours = ["10:00 AM", "12:00 AM", "14:00 AM", "16:00 AM"]
+const hours = ["10h00", "12h00", "14h00", "16h00"]
 
 export default function HoursSelection() {
-  const [hour, setHour] = useState("10:00 AM");
+  const [hour, setHour] = useState("10h00");
 
   return (
     <Menu as="div" className="w-full h-full flex xl:flex-row">
@@ -22,7 +22,7 @@ export default function HoursSelection() {
           <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
             <FaClock className="text-accent" />
             <div className="text-[15px] uppercase font-bold">
-              Select Hours
+              Selecione Horário
             </div>
           </div>
           <div className="flex items-center justify-center gap-x-3">

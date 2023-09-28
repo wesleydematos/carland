@@ -4,7 +4,7 @@
 import Image from "next/image";
 
 //icons
-import { FaPhone, FaEnvelope } from "react-icons/fa6";
+import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 
 //components
 import Copyright from "./Copyright";
@@ -33,7 +33,7 @@ export default function Footer() {
           <Link to="home" smooth={true} spy={true} className="cursor-pointer">
             <Image src={"icons/logo.svg"} width={200} height={200}/>
           </Link>
-          <p>Developer contacts:</p>
+          <p>Contatos do desenvolvedor:</p>
           <div className="flex flex-col gap-y-4 font-semibold">
             <div className="flex items-center gap-x-[10px]">
               <FaPhone/>
@@ -43,44 +43,50 @@ export default function Footer() {
               <FaEnvelope/>
               <p className="font-medium">wesleydematos3@gmail.com</p>
             </div>
+            <div className="flex items-center gap-x-[10px]">
+              <FaLinkedin/>
+              <p>
+               <a className="font-medium" href="https://www.linkedin.com/in/wesley-matos/" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex-1 flex flex-col xl:items-center">
           <div>
-            <h3 className="h3 font-bold mb-8">Company</h3>
+            <h3 className="h3 font-bold mb-8">Empresa</h3>
             <ul className="flex flex-col gap-y-4 font-semibold">
-              <li><a href="">New York</a></li>
-              <li><a href="">Careers</a></li>
+              <li><a href="">Carreiras</a></li>
               <li><a href="">Mobile</a></li>
               <li><a href="">Blog</a></li>
-              <li><a href="">How we work</a></li>
+              <li><a href="">Funcionários</a></li>
+              <li><a href="">Como Trabalhamos</a></li>
             </ul>
           </div>
         </div>
         <div className="flex-1">
-          <h3 className="h3 font-bold mb-8">Working Hours</h3>
+          <h3 className="h3 font-bold mb-8">Horários de funcionamento</h3>
           <div className="flex flex-col gap-y-4">
             <div className="flex gap-x-2">
-              <p>Mon-Fri:</p>
-              <p className="font-semibold">09:00AM - 09:00PM</p>
+              <p>Segunda-Sexta:</p>
+              <p className="font-semibold">09h00 - 21h00</p>
             </div>
             <div className="flex gap-x-2">
-              <p>Sat:</p>
-              <p className="font-semibold">09:00AM - 07:00PM</p>
+              <p>Sábados:</p>
+              <p className="font-semibold">09h00 - 19h00</p>
             </div>
             <div className="flex gap-x-2">
-              <p>Sun:</p>
-              <p className="font-semibold">Closed</p>
+              <p>Domingos:</p>
+              <p className="font-semibold">Fechado</p>
             </div>
           </div>
         </div>
         <div className="flex-1">
-          <h3 className="h3 font-bold mb-8">Newsletter</h3>
-          <p className="font-semibold mb-9">Subscribe:</p>
+          <h3 className="h3 font-bold mb-8">Boletim de notícias</h3>
+          <p className="font-semibold mb-9">Inscreva-se:</p>
           <form className="flex gap-x-2 h-14">
-            <input type="email" placeholder="Your email" className="outline-none 
+            <input type="email" placeholder="Seu email" className="outline-none 
             bg-white h-full border rounded-lg pl-4 focus:border-accent"/>
-            <button type="submit" className="btn btn-sm btn-accent w-24">Submit</button>
+            <button type="submit" className="btn btn-sm btn-accent w-24 cursor-not-allowed" disabled>Enviar</button>
           </form>
         </div>
       </motion.div>

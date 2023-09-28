@@ -26,7 +26,7 @@ export default function Cta() {
                 viewport={{once: false, amount: 0.6}}
                 className="h2"
               >
-                Download our App now and hit the road with ease
+                Baixe nosso aplicativo agora e pegue a estrada com facilidade
               </motion.h2>
               <motion.p
                 variants={fadeIn("right", 0.4)}
@@ -35,8 +35,9 @@ export default function Cta() {
                 viewport={{once: false, amount: 0.2}}
                 className="mb-10"
               >
-                Whether you're planning a road trip or need a quick ride, our app connects you to a fleet of quality 
-                vehicles at your fingertips. Get behind the wheel today and start your journey!
+                Esteja você planejando uma viagem longa ou precisando de uma viagem rápida, 
+                nosso aplicativo conecta você a uma frota de veículos de qualidade ao seu alcance. 
+                Pegue o volante hoje e comece sua jornada!
               </motion.p>
               <motion.div 
                 variants={fadeIn("right", 0.6)}
@@ -45,10 +46,10 @@ export default function Cta() {
                 viewport={{once: false, amount: 0.6}}
                 className="flex gap-x-3 justify-center md:justify-start"
               >
-                <button className="btn-cta">
+                <button className="btn-cta cursor-not-allowed" disabled>
                   <Image src={"icons/buttons/google-play.svg"} width={132} height={36} alt="google play"/>
                 </button>
-                <button className="btn-cta">
+                <button className="btn-cta cursor-not-allowed" disabled>
                   <Image src={"icons/buttons/app-store.svg"} width={132} height={36} alt="apple store"/>
                 </button>
               </motion.div>
