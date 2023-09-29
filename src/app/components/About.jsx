@@ -63,7 +63,7 @@ export default function About() {
                 ​garantem uma experiência perfeita.
               </motion.p>
               <motion.div 
-                className="flex items-center gap-x-8 mb-12"
+                className="flex items-start gap-x-8 mb-12"
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{once: false, amount: 0.2}}
@@ -84,7 +84,7 @@ export default function About() {
                     {inView ? <><CountUp start={0} end={135} duration={3} delay={1}/>+</> : null}
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    locadoras <br /> 
+                    locadoras 
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">

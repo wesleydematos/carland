@@ -145,7 +145,7 @@ export default function CarSlider() {
                   <div>
                     <p className="text-[13px] uppercase">{car.type}</p>
                     <h3 className="text-[1rem] leading-6 uppercase font-bold">{car.name}</h3>
-                    <p className="mb-6 text-accent uppercase font-semibold">R${car.price}/day</p>
+                    <p className="mb-6 text-accent uppercase font-semibold">R${car.price}/dia</p>
                   </div>
                   <div className="flex gap-x-2 text-accent h-max">
                     <FaStar/>
